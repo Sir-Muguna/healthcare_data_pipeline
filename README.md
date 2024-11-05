@@ -32,11 +32,14 @@ Tasks in this group perform data transformations.
 - **`hospitalinfo_clean_task`**: Cleans hospital information data.
 
 ### Upload to GCS
+![MetaData](include/images/gcs.png) 
+
 This task group uploads CSV files to Google Cloud Storage (GCS).
 
 Each CSV file is uploaded to a designated GCS bucket and path, where it is later accessible for loading into BigQuery.
 
 ### BigQuery and DBT Processing
+![MetaData](include/images/bigquery.png) 
 Tasks in this group handle loading data into BigQuery and further processing using DBT models.
 
 - **BigQuery Dataset Creation**: Creates datasets for raw and transformed healthcare data.
