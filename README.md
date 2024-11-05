@@ -69,7 +69,7 @@ Once the data has been processed and stored in BigQuery, this task group involve
 
 ## Dashboard
 
-A simple interactive dashboard will be created on Looker for data analysis.
+A simple interactive dashboard will be created on PowerBI for data analysis.
 
 ![MetaData](include/images/HealthCare_Dashboard.png) 
 
