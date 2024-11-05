@@ -1,5 +1,5 @@
 # Healthcare ETL Data Pipeline
-![MetaData](.include/images/end-to-end_airflow.png) 
+![MetaData](include/images/end-to-end_airflow.png) 
 
 This project is an ETL (Extract, Transform, Load) pipeline for processing healthcare data using [Apache Airflow](https://airflow.apache.org/). The pipeline automates tasks for data extraction, transformation, loading to Google Cloud Storage (GCS) and BigQuery, and further data processing with DBT (Data Build Tool) and connects to PowerBI for data visualization.
 
@@ -15,7 +15,7 @@ This pipeline runs on a monthly schedule, starting with file validation, and pro
 - **Owner**: Airflow
 
 ## Pipeline Components
-![MetaData](.include/images/airflow_dag.png) 
+![MetaData](include/images/airflow_dag.png) 
 
 ### Data Extraction
 Tasks in this group extract data from multiple sources.
@@ -71,7 +71,7 @@ Once the data has been processed and stored in BigQuery, this task group involve
 
 A simple interactive dashboard will be created on Looker for data analysis.
 
-![MetaData](.include/images/HealthCare_Dashboard.png) 
+![MetaData](include/images/HealthCare_Dashboard.png) 
 
 ## Prerequisites
 
