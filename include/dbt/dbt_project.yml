@@ -1,0 +1,9 @@
+name: 'healthcare'
+
+profile: 'healthcare'
+
+models:
+  healthcare_raw:
+    materialized: table
+  healthcare_transformed:
+    materialized: table

@@ -1,0 +1,25 @@
+default:
+  outputs:
+    dev:
+      dataset: healthcare_transformed
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: healthcare-data-pipeline
+      threads: 5
+      type: bigquery
+  target: dev
+healthcare:
+  outputs:
+    dev:
+      dataset: healthcare_transformed
+      keyfile: /usr/local/airflow/include/gcp/service_account.json
+      location: US
+      method: service-account
+      project: healthcare-data-pipeline
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

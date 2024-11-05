@@ -1,0 +1,972 @@
+[0m10:07:33.633642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7fce4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96aad0>]}
+
+
+============================== 10:07:33.636372 | afd4b42e-67f5-4b60-96f7-7162a4b9430a ==============================
+[0m10:07:33.636372 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:07:33.637006 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt/logs', 'debug': 'False', 'profiles_dir': '/root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:33.782305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'afd4b42e-67f5-4b60-96f7-7162a4b9430a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96a710>]}
+[0m10:07:33.796367 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-1goovbmu'
+[0m10:07:33.796833 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:07:34.349633 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:07:34.350320 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:07:35.017428 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:07:35.025156 [info ] [MainThread]: Updating lock file in file path: /root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt/package-lock.yml
+[0m10:07:35.026758 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-hsclpk28'
+[0m10:07:35.028916 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:07:35.747784 [info ] [MainThread]: Installed from version 1.1.1
+[0m10:07:35.748211 [info ] [MainThread]: Updated version available: 1.3.0
+[0m10:07:35.748639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'afd4b42e-67f5-4b60-96f7-7162a4b9430a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96b0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96b3d0>]}
+[0m10:07:35.749021 [info ] [MainThread]: 
+[0m10:07:35.749376 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils']                 
+Update your versions in packages.yml, then run dbt deps
+[0m10:07:35.750952 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.1544328, "process_user_time": 0.921585, "process_kernel_time": 0.067198, "process_mem_max_rss": "98232", "process_in_blocks": "3016", "process_out_blocks": "2240"}
+[0m10:07:35.751345 [debug] [MainThread]: Command `dbt deps` succeeded at 10:07:35.751272 after 2.15 seconds
+[0m10:07:35.751622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96b410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d7f96b990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0d8330fa50>]}
+[0m10:07:35.751903 [debug] [MainThread]: Flushing usage events
+[0m10:07:56.613745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132c25010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71331e02d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132fb4b10>]}
+
+
+============================== 10:07:56.615517 | de57c541-d6b5-473b-a77a-dc3221c2ac1e ==============================
+[0m10:07:56.615517 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:07:56.615998 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:56.695196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'de57c541-d6b5-473b-a77a-dc3221c2ac1e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132cc3e50>]}
+[0m10:07:56.703429 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-tv23dr8v'
+[0m10:07:56.703891 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:07:56.758671 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:07:56.759253 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:07:56.806630 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:07:56.812730 [info ] [MainThread]: Updating lock file in file path: /root/projects/portfolio_projects/data_engineering/healthcare_data_pipeline/include/dbt/package-lock.yml
+[0m10:07:56.820202 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-j6xgjonf'
+[0m10:07:56.822373 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:07:57.424900 [info ] [MainThread]: Installed from version 1.3.0
+[0m10:07:57.425253 [info ] [MainThread]: Up to date!
+[0m10:07:57.425607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'de57c541-d6b5-473b-a77a-dc3221c2ac1e', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132c3b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132cd3510>]}
+[0m10:07:57.426345 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.8384494, "process_user_time": 0.849794, "process_kernel_time": 0.069983, "process_mem_max_rss": "98328", "process_out_blocks": "2304", "process_in_blocks": "0"}
+[0m10:07:57.426764 [debug] [MainThread]: Command `dbt deps` succeeded at 10:07:57.426679 after 0.84 seconds
+[0m10:07:57.427012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132c3a890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7132c3ee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f713652f910>]}
+[0m10:07:57.427281 [debug] [MainThread]: Flushing usage events
+[0m07:12:42.456830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0872cf020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0880b02f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0880b0920>]}
+
+
+============================== 07:12:42.458589 | 2ec42252-2a90-49a3-8b1e-bf645e268a1d ==============================
+[0m07:12:42.458589 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:12:42.459189 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt deps', 'quiet': 'False', 'debug': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'introspect': 'True', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'use_experimental_parser': 'False', 'no_print': 'None', 'target_path': 'None', 'indirect_selection': 'eager', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80'}
+[0m07:12:42.570116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2ec42252-2a90-49a3-8b1e-bf645e268a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0868f7470>]}
+[0m07:12:42.597687 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-ri36k47r'
+[0m07:12:42.598078 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m07:12:42.966768 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m07:12:42.968485 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m07:12:43.667570 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m07:12:43.672958 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m07:12:44.365329 [info ] [MainThread]: Installed from version 1.3.0
+[0m07:12:44.365875 [info ] [MainThread]: Up to date!
+[0m07:12:44.366451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '2ec42252-2a90-49a3-8b1e-bf645e268a1d', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0869804d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa086866c90>]}
+[0m07:12:44.367492 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.9503201, "process_user_time": 1.265671, "process_kernel_time": 0.051035, "process_mem_max_rss": "95924", "process_in_blocks": "616", "process_out_blocks": "2296"}
+[0m07:12:44.367943 [debug] [MainThread]: Command `dbt deps` succeeded at 07:12:44.367846 after 1.95 seconds
+[0m07:12:44.368260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa08685b980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa086b7e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa0869804d0>]}
+[0m07:12:44.368549 [debug] [MainThread]: Flushing usage events
+[0m07:12:56.329689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd8671790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd8462600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd8671df0>]}
+
+
+============================== 07:12:56.331200 | c43098ae-ec49-418e-b306-513fa4cd1608 ==============================
+[0m07:12:56.331200 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:12:56.331751 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'version_check': 'True', 'partial_parse': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'fail_fast': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'introspect': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'target_path': 'None', 'printer_width': '80', 'use_colors': 'True'}
+[0m07:12:57.672989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c43098ae-ec49-418e-b306-513fa4cd1608', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cb530cb30>]}
+[0m07:12:57.717104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c43098ae-ec49-418e-b306-513fa4cd1608', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cb7fb9af0>]}
+[0m07:12:57.717700 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:12:57.735782 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:12:57.736720 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:12:57.737215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c43098ae-ec49-418e-b306-513fa4cd1608', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cb4fa2600>]}
+[0m07:12:57.739638 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading healthcare: sources/sources.yml - Runtime Error
+    Syntax error near line 9
+    ------------------------------
+    6  | 
+    7  |     tables:
+    8  |       - name: icd_raw_data
+    9  | 			# - name: country
+    
+    Raw Error:
+    ------------------------------
+    while scanning a plain scalar
+      in "<unicode string>", line 8, column 15
+    found a tab character that violates indentation
+      in "<unicode string>", line 9, column 1
+[0m07:12:57.740970 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.4453107, "process_user_time": 2.631051, "process_kernel_time": 0.356082, "process_mem_max_rss": "223760", "process_in_blocks": "35424", "process_out_blocks": "16", "command_success": false}
+[0m07:12:57.741737 [debug] [MainThread]: Command `dbt run` failed at 07:12:57.741605 after 1.45 seconds
+[0m07:12:57.742203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd7ab2c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cb4f44bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cd765ef90>]}
+[0m07:12:57.742695 [debug] [MainThread]: Flushing usage events
+[0m07:15:18.027732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784a58eb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784ab22c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784a58f320>]}
+
+
+============================== 07:15:18.029374 | be38f6b2-53c6-4c04-a5d4-a1af0822f451 ==============================
+[0m07:15:18.029374 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:15:18.030001 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'printer_width': '80', 'empty': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error': 'None', 'target_path': 'None', 'no_print': 'None', 'debug': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/'}
+[0m07:15:18.843672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be38f6b2-53c6-4c04-a5d4-a1af0822f451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78278225a0>]}
+[0m07:15:18.887175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be38f6b2-53c6-4c04-a5d4-a1af0822f451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78277605f0>]}
+[0m07:15:18.887900 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:15:18.902343 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:15:18.903050 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:15:18.903491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'be38f6b2-53c6-4c04-a5d4-a1af0822f451', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7827588ef0>]}
+[0m07:15:20.035973 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  expected token ',', got 'the'
+    line 6
+      skip_leading_rows=1  -- If the CSV file contains headers
+[0m07:15:20.037128 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.0493677, "process_user_time": 3.695965, "process_kernel_time": 0.200867, "process_mem_max_rss": "227592", "process_in_blocks": "1584", "process_out_blocks": "16", "command_success": false}
+[0m07:15:20.037789 [debug] [MainThread]: Command `dbt run` failed at 07:15:20.037656 after 2.05 seconds
+[0m07:15:20.038345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78274b0ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78274ea090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f78274eb320>]}
+[0m07:15:20.039024 [debug] [MainThread]: Flushing usage events
+[0m07:16:42.424535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28ab39dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28aa8ed640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28aa6a59a0>]}
+
+
+============================== 07:16:42.426171 | cde2a5cb-0458-4ac8-87e5-04f5a71a4362 ==============================
+[0m07:16:42.426171 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:16:42.426761 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'quiet': 'False', 'static_parser': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'log_cache_events': 'False', 'warn_error': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'version_check': 'True', 'target_path': 'None', 'introspect': 'True', 'empty': 'False', 'fail_fast': 'False', 'use_colors': 'True'}
+[0m07:16:43.149524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28aba08e00>]}
+[0m07:16:43.191656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887c292b0>]}
+[0m07:16:43.192249 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:16:43.208463 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:16:43.209631 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:16:43.210235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887c28c80>]}
+[0m07:16:44.431702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887928980>]}
+[0m07:16:44.511716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887ced460>]}
+[0m07:16:44.512298 [info ] [MainThread]: Found 2 models, 1 source, 600 macros
+[0m07:16:44.512700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f288791cfe0>]}
+[0m07:16:44.514204 [info ] [MainThread]: 
+[0m07:16:44.514863 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:16:44.518498 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m07:16:44.518879 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:16:46.150073 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now create_healthcare-data-pipeline_healthcare)
+[0m07:16:46.152377 [debug] [ThreadPool]: Creating schema "database: "healthcare-data-pipeline"
+schema: "healthcare"
+"
+[0m07:16:46.163854 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:16:46.165495 [debug] [ThreadPool]: On create_healthcare-data-pipeline_healthcare: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "connection_name": "create_healthcare-data-pipeline_healthcare"} */
+create schema if not exists `healthcare-data-pipeline`.`healthcare`
+  
+[0m07:16:47.594278 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:3c837267-2208-490e-91a7-09ece91f6713&page=queryresults
+[0m07:16:48.819429 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_healthcare-data-pipeline_healthcare, now list_healthcare-data-pipeline_healthcare)
+[0m07:16:48.819857 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:16:50.127051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28ab25de20>]}
+[0m07:16:50.128978 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:16:50.130065 [info ] [MainThread]: 
+[0m07:16:50.136498 [debug] [Thread-1 (]: Began running node model.healthcare.external_table
+[0m07:16:50.137005 [info ] [Thread-1 (]: 1 of 2 START sql external model healthcare.external_table ...................... [RUN]
+[0m07:16:50.137459 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.external_table)
+[0m07:16:50.137931 [debug] [Thread-1 (]: Began compiling node model.healthcare.external_table
+[0m07:16:50.147981 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.external_table"
+[0m07:16:50.149322 [debug] [Thread-1 (]: Began executing node model.healthcare.external_table
+[0m07:16:50.156035 [debug] [Thread-1 (]: Compilation Error in model external_table (models/sources/external_table.sql)
+  No materialization 'external' was found for adapter bigquery! (searched types 'default' and 'bigquery')
+[0m07:16:50.157830 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cde2a5cb-0458-4ac8-87e5-04f5a71a4362', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887928e60>]}
+[0m07:16:50.158485 [error] [Thread-1 (]: 1 of 2 ERROR creating sql external model healthcare.external_table ............. [[31mERROR[0m in 0.02s]
+[0m07:16:50.159328 [debug] [Thread-1 (]: Finished running node model.healthcare.external_table
+[0m07:16:50.161199 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m07:16:50.161640 [info ] [Thread-1 (]: 2 of 2 SKIP relation healthcare.transform_icd_data ............................. [[33mSKIP[0m]
+[0m07:16:50.162117 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m07:16:50.163544 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:16:50.163968 [debug] [MainThread]: Connection 'model.healthcare.external_table' was properly closed.
+[0m07:16:50.164390 [info ] [MainThread]: 
+[0m07:16:50.165053 [info ] [MainThread]: Finished running 1 external model, 1 table model in 0 hours 0 minutes and 5.65 seconds (5.65s).
+[0m07:16:50.166108 [debug] [MainThread]: Command end result
+[0m07:16:50.204253 [info ] [MainThread]: 
+[0m07:16:50.204825 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:16:50.205264 [info ] [MainThread]: 
+[0m07:16:50.205806 [error] [MainThread]:   Compilation Error in model external_table (models/sources/external_table.sql)
+  No materialization 'external' was found for adapter bigquery! (searched types 'default' and 'bigquery')
+[0m07:16:50.206201 [info ] [MainThread]: 
+[0m07:16:50.206668 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m07:16:50.207899 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 7.8265896, "process_user_time": 4.016475, "process_kernel_time": 0.150242, "process_mem_max_rss": "237360", "process_in_blocks": "552", "process_out_blocks": "3688", "command_success": false}
+[0m07:16:50.208429 [debug] [MainThread]: Command `dbt run` failed at 07:16:50.208322 after 7.83 seconds
+[0m07:16:50.208861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f28aa52ea20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2887ae0aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f288ca82660>]}
+[0m07:16:50.209196 [debug] [MainThread]: Flushing usage events
+[0m07:21:38.474226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b5c28980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b5e1ec00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b52c8d40>]}
+
+
+============================== 07:21:38.475764 | 8bb6dfd2-91dc-4dd5-9283-81f3187b1264 ==============================
+[0m07:21:38.475764 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:21:38.476343 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'use_colors': 'True', 'debug': 'False', 'log_format': 'default', 'write_json': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'introspect': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'empty': 'False'}
+[0m07:21:39.307804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8bb6dfd2-91dc-4dd5-9283-81f3187b1264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b50ccce0>]}
+[0m07:21:39.351112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8bb6dfd2-91dc-4dd5-9283-81f3187b1264', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b6690920>]}
+[0m07:21:39.351723 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:21:39.369704 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:21:39.532165 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:21:39.532729 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:21:39.659094 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  'healthcare' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m07:21:39.660144 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.2222182, "process_user_time": 2.833796, "process_kernel_time": 0.1189, "process_mem_max_rss": "228208", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m07:21:39.660727 [debug] [MainThread]: Command `dbt run` failed at 07:21:39.660606 after 1.22 seconds
+[0m07:21:39.661104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b62dbfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc6b61f2b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc69280b4d0>]}
+[0m07:21:39.661460 [debug] [MainThread]: Flushing usage events
+[0m07:22:16.563021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185c4e3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185bc12960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185e3f8fb0>]}
+
+
+============================== 07:22:16.564636 | aa9115a6-6c8d-4420-b293-76d7a62c0f13 ==============================
+[0m07:22:16.564636 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:22:16.565221 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt deps', 'warn_error': 'None', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'quiet': 'False', 'fail_fast': 'False', 'no_print': 'None', 'debug': 'False', 'partial_parse': 'True', 'version_check': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'printer_width': '80', 'target_path': 'None', 'write_json': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'static_parser': 'True', 'introspect': 'True'}
+[0m07:22:16.653471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aa9115a6-6c8d-4420-b293-76d7a62c0f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185d110980>]}
+[0m07:22:16.671172 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-8guke2o0'
+[0m07:22:16.671583 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m07:22:17.012823 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m07:22:17.013721 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m07:22:17.270606 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m07:22:17.280358 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m07:22:17.944356 [info ] [MainThread]: Installed from version 1.3.0
+[0m07:22:17.944949 [info ] [MainThread]: Up to date!
+[0m07:22:17.945553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'aa9115a6-6c8d-4420-b293-76d7a62c0f13', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185b98f500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185b8ac2f0>]}
+[0m07:22:17.946475 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.4192283, "process_user_time": 1.214658, "process_kernel_time": 0.039501, "process_mem_max_rss": "95916", "process_out_blocks": "2304", "process_in_blocks": "0"}
+[0m07:22:17.946932 [debug] [MainThread]: Command `dbt deps` succeeded at 07:22:17.946833 after 1.42 seconds
+[0m07:22:17.947236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185c777e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185b87c8c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f185b96af00>]}
+[0m07:22:17.947518 [debug] [MainThread]: Flushing usage events
+[0m07:22:22.879856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ea2610440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e9f174350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e9f174500>]}
+
+
+============================== 07:22:22.881303 | ccd781af-3c68-4f6f-88db-f11bad076baf ==============================
+[0m07:22:22.881303 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:22:22.881852 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'target_path': 'None', 'indirect_selection': 'eager', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False', 'introspect': 'True', 'printer_width': '80', 'no_print': 'None', 'write_json': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'quiet': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'empty': 'False', 'version_check': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'warn_error': 'None'}
+[0m07:22:23.644497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ccd781af-3c68-4f6f-88db-f11bad076baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ea0560b90>]}
+[0m07:22:23.688860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ccd781af-3c68-4f6f-88db-f11bad076baf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e81ade5a0>]}
+[0m07:22:23.689495 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:22:23.710000 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:22:23.855880 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:22:23.856455 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:22:23.991544 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  'healthcare' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m07:22:23.992599 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.147157, "process_user_time": 2.743739, "process_kernel_time": 0.100503, "process_mem_max_rss": "230340", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m07:22:23.993187 [debug] [MainThread]: Command `dbt run` failed at 07:22:23.993089 after 1.15 seconds
+[0m07:22:23.993540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e9f959e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e80c79790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8e80c884d0>]}
+[0m07:22:23.993869 [debug] [MainThread]: Flushing usage events
+[0m07:24:12.474020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4097f9ef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409635e660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409609ec90>]}
+
+
+============================== 07:24:12.475930 | 2c9d0b91-f415-4480-9478-b019c04fbea8 ==============================
+[0m07:24:12.475930 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:24:12.476797 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'debug': 'False', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'no_print': 'None', 'warn_error': 'None', 'write_json': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'cache_selected_only': 'False', 'printer_width': '80', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt deps', 'use_colors': 'True'}
+[0m07:24:12.575284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2c9d0b91-f415-4480-9478-b019c04fbea8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4095deb7d0>]}
+[0m07:24:12.592836 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-9um6duvx'
+[0m07:24:12.593589 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m07:24:12.922631 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m07:24:12.924139 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m07:24:13.644030 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m07:24:13.649994 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m07:24:14.327617 [info ] [MainThread]: Installed from version 1.3.0
+[0m07:24:14.328135 [info ] [MainThread]: Up to date!
+[0m07:24:14.328663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '2c9d0b91-f415-4480-9478-b019c04fbea8', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4095d52cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4095d50f50>]}
+[0m07:24:14.329795 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.8983444, "process_user_time": 1.424204, "process_kernel_time": 0.079675, "process_mem_max_rss": "96024", "process_out_blocks": "2312", "process_in_blocks": "0"}
+[0m07:24:14.330298 [debug] [MainThread]: Command `dbt deps` succeeded at 07:24:14.330160 after 1.90 seconds
+[0m07:24:14.330606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409680b170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4097578e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4095e33620>]}
+[0m07:24:14.330934 [debug] [MainThread]: Flushing usage events
+[0m07:24:19.660086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff445a6eb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff446203b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4475d2270>]}
+
+
+============================== 07:24:19.661542 | 7426913f-5990-42e4-a2a1-cdd6c72ac74c ==============================
+[0m07:24:19.661542 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:24:19.662099 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'static_parser': 'True', 'no_print': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'debug': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'log_format': 'default', 'empty': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/'}
+[0m07:24:20.425013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff446956bd0>]}
+[0m07:24:20.472345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4232efef0>]}
+[0m07:24:20.473013 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:24:20.489327 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:24:20.633962 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:24:20.634526 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:24:20.817808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422ee7dd0>]}
+[0m07:24:20.885891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422d5f3b0>]}
+[0m07:24:20.886438 [info ] [MainThread]: Found 2 models, 1 source, 600 macros
+[0m07:24:20.886780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422efa8d0>]}
+[0m07:24:20.888287 [info ] [MainThread]: 
+[0m07:24:20.888872 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:24:20.892464 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m07:24:20.892812 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:24:22.367100 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m07:24:22.367634 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:24:23.706555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422e33500>]}
+[0m07:24:23.708253 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:24:23.709413 [info ] [MainThread]: 
+[0m07:24:23.713408 [debug] [Thread-1 (]: Began running node model.healthcare.external_table
+[0m07:24:23.715041 [info ] [Thread-1 (]: 1 of 2 START sql table model healthcare.external_table ......................... [RUN]
+[0m07:24:23.715618 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.external_table)
+[0m07:24:23.716045 [debug] [Thread-1 (]: Began compiling node model.healthcare.external_table
+[0m07:24:23.725413 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.external_table"
+[0m07:24:23.726659 [debug] [Thread-1 (]: Began executing node model.healthcare.external_table
+[0m07:24:23.763172 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.external_table"
+[0m07:24:23.764072 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:24:23.765285 [debug] [Thread-1 (]: On model.healthcare.external_table: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.external_table"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`external_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE OR REPLACE EXTERNAL TABLE `healthcare-data-pipeline.external_table`
+OPTIONS (
+  format = 'CSV',
+  uris = ['gs://healthcare_data_pipeline/raw/icd_raw_data.csv'],
+  skip_leading_rows = 1  -- Skip header row
+);
+    );
+  
+[0m07:24:24.951625 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:f2adb255-85b0-4d5b-8958-7a12ae130927&page=queryresults
+[0m07:24:24.952401 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]; reason: invalidQuery, location: query, message: Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m07:24:26.165122 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:82dc7ccc-baf5-4d5c-a676-2e1962c5882c&page=queryresults
+[0m07:24:26.166829 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:82dc7ccc-baf5-4d5c-a676-2e1962c5882c&page=queryresults
+[0m07:24:26.180357 [debug] [Thread-1 (]: Database Error in model external_table (models/sources/external_table.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:24:26.182258 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7426913f-5990-42e4-a2a1-cdd6c72ac74c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422f0a060>]}
+[0m07:24:26.183564 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model healthcare.external_table ................ [[31mERROR[0m in 2.47s]
+[0m07:24:26.184474 [debug] [Thread-1 (]: Finished running node model.healthcare.external_table
+[0m07:24:26.186139 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m07:24:26.186570 [info ] [Thread-1 (]: 2 of 2 SKIP relation healthcare.transform_icd_data ............................. [[33mSKIP[0m]
+[0m07:24:26.187026 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m07:24:26.188422 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:24:26.188742 [debug] [MainThread]: Connection 'model.healthcare.external_table' was properly closed.
+[0m07:24:26.189103 [info ] [MainThread]: 
+[0m07:24:26.189468 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.30 seconds (5.30s).
+[0m07:24:26.190189 [debug] [MainThread]: Command end result
+[0m07:24:26.222598 [info ] [MainThread]: 
+[0m07:24:26.223103 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:24:26.223496 [info ] [MainThread]: 
+[0m07:24:26.223914 [error] [MainThread]:   Database Error in model external_table (models/sources/external_table.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:24:26.224217 [info ] [MainThread]: 
+[0m07:24:26.224857 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m07:24:26.225936 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.6018696, "process_user_time": 3.087937, "process_kernel_time": 0.120309, "process_mem_max_rss": "240984", "process_in_blocks": "416", "process_out_blocks": "3688", "command_success": false}
+[0m07:24:26.226488 [debug] [MainThread]: Command `dbt run` failed at 07:24:26.226382 after 6.60 seconds
+[0m07:24:26.226868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4475d2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4457e77a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff422fff8c0>]}
+[0m07:24:26.227221 [debug] [MainThread]: Flushing usage events
+[0m07:25:30.785801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f23d48ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f24052570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f23629eb0>]}
+
+
+============================== 07:25:30.787304 | b184673e-d903-460f-aeee-ccea39b33c25 ==============================
+[0m07:25:30.787304 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:25:30.787879 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'empty': 'False', 'write_json': 'True', 'introspect': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'use_experimental_parser': 'False', 'warn_error': 'None', 'no_print': 'None', 'log_format': 'default', 'fail_fast': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'partial_parse': 'True', 'debug': 'False', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/'}
+[0m07:25:31.537558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b184673e-d903-460f-aeee-ccea39b33c25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f057bcce0>]}
+[0m07:25:31.580382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b184673e-d903-460f-aeee-ccea39b33c25', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f092cdb80>]}
+[0m07:25:31.581006 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:25:31.601350 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:25:31.748307 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:25:31.748867 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:25:31.871706 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  invalid syntax for function call expression
+    line 3
+      {{ config(
+[0m07:25:31.872763 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1261517, "process_user_time": 2.735297, "process_kernel_time": 0.1514, "process_mem_max_rss": "230004", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m07:25:31.873308 [debug] [MainThread]: Command `dbt run` failed at 07:25:31.873215 after 1.13 seconds
+[0m07:25:31.873644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f23586ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f05724260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4f04ec4770>]}
+[0m07:25:31.873946 [debug] [MainThread]: Flushing usage events
+[0m07:26:44.457437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4eecef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d50ba6690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4eeced80>]}
+
+
+============================== 07:26:44.459106 | d1c8bb60-ce15-4444-8243-1332aee8c7ff ==============================
+[0m07:26:44.459106 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:26:44.459686 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'write_json': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'fail_fast': 'False', 'debug': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'introspect': 'True', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'warn_error': 'None', 'use_colors': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'empty': 'None', 'no_print': 'None', 'printer_width': '80'}
+[0m07:26:44.540836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd1c8bb60-ce15-4444-8243-1332aee8c7ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4f9f03e0>]}
+[0m07:26:44.555278 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-thk24rhp'
+[0m07:26:44.555648 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m07:26:45.579448 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m07:26:45.580683 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m07:26:46.301723 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m07:26:46.309484 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m07:26:46.978053 [info ] [MainThread]: Installed from version 1.3.0
+[0m07:26:46.978475 [info ] [MainThread]: Up to date!
+[0m07:26:46.979017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd1c8bb60-ce15-4444-8243-1332aee8c7ff', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4fe8c500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4ed2e2d0>]}
+[0m07:26:46.979907 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.557284, "process_user_time": 1.136266, "process_kernel_time": 0.108686, "process_mem_max_rss": "96056", "process_out_blocks": "2304", "process_in_blocks": "0"}
+[0m07:26:46.980354 [debug] [MainThread]: Command `dbt deps` succeeded at 07:26:46.980258 after 2.56 seconds
+[0m07:26:46.980649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4f18d460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d52aaf0e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d4f2347d0>]}
+[0m07:26:46.980935 [debug] [MainThread]: Flushing usage events
+[0m07:26:52.425723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f609868a480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f60984d1e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6098dd7110>]}
+
+
+============================== 07:26:52.427299 | 4b14b74a-dc60-4cec-bf09-18eedf76558e ==============================
+[0m07:26:52.427299 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:26:52.427924 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'write_json': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'use_colors': 'True', 'log_format': 'default', 'target_path': 'None', 'quiet': 'False', 'version_check': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'static_parser': 'True', 'introspect': 'True', 'empty': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m07:26:53.157460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4b14b74a-dc60-4cec-bf09-18eedf76558e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6099b84b30>]}
+[0m07:26:53.200062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4b14b74a-dc60-4cec-bf09-18eedf76558e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f607d38b290>]}
+[0m07:26:53.200642 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:26:53.217570 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:26:53.364180 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:26:53.364741 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:26:53.488903 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  invalid syntax for function call expression
+    line 3
+      {{ config(
+[0m07:26:53.490280 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1058061, "process_user_time": 2.739898, "process_kernel_time": 0.128587, "process_mem_max_rss": "227812", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m07:26:53.490794 [debug] [MainThread]: Command `dbt run` failed at 07:26:53.490684 after 1.11 seconds
+[0m07:26:53.491197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6098dd7110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6075e59c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6075b42990>]}
+[0m07:26:53.491513 [debug] [MainThread]: Flushing usage events
+[0m07:31:33.832992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d225ced20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d222e3260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d225ccda0>]}
+
+
+============================== 07:31:33.834528 | 264ec50b-2839-4133-b54e-b9d4178648a5 ==============================
+[0m07:31:33.834528 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:31:33.835082 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'target_path': 'None', 'fail_fast': 'False', 'cache_selected_only': 'False', 'invocation_command': 'dbt deps', 'write_json': 'True', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'introspect': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'debug': 'False', 'partial_parse': 'True', 'no_print': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/usr/local/airflow/include/dbt', 'empty': 'None', 'use_colors': 'True'}
+[0m07:31:33.927255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '264ec50b-2839-4133-b54e-b9d4178648a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d22083860>]}
+[0m07:31:33.943243 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-chyazwwu'
+[0m07:31:33.943781 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m07:31:34.676671 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m07:31:34.677761 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m07:31:35.344154 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m07:31:35.348399 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m07:31:36.095173 [info ] [MainThread]: Installed from version 1.3.0
+[0m07:31:36.095668 [info ] [MainThread]: Up to date!
+[0m07:31:36.096154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '264ec50b-2839-4133-b54e-b9d4178648a5', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d2227dbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d220817c0>]}
+[0m07:31:36.097180 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 2.3005176, "process_user_time": 1.263074, "process_kernel_time": 0.061116, "process_mem_max_rss": "96080", "process_out_blocks": "2296", "process_in_blocks": "0"}
+[0m07:31:36.097682 [debug] [MainThread]: Command `dbt deps` succeeded at 07:31:36.097574 after 2.30 seconds
+[0m07:31:36.098001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d22456ae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d22435880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d22133f50>]}
+[0m07:31:36.098329 [debug] [MainThread]: Flushing usage events
+[0m07:31:41.490790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd71e5ff350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd71e7a7950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd71ea8a0c0>]}
+
+
+============================== 07:31:41.492280 | a4d11c65-7b5a-4362-9861-cd6e602b4035 ==============================
+[0m07:31:41.492280 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:31:41.492917 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'static_parser': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'partial_parse': 'True', 'printer_width': '80', 'quiet': 'False', 'empty': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'debug': 'False', 'write_json': 'True'}
+[0m07:31:42.599205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a4d11c65-7b5a-4362-9861-cd6e602b4035', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6fb935a90>]}
+[0m07:31:42.654283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a4d11c65-7b5a-4362-9861-cd6e602b4035', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6fb900ad0>]}
+[0m07:31:42.654934 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:31:42.674497 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:31:42.887520 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:31:42.888380 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:31:43.050801 [error] [MainThread]: Encountered an error:
+Compilation Error in model external_table (models/sources/external_table.sql)
+  invalid syntax for function call expression
+    line 3
+      {{ config(
+[0m07:31:43.051930 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.5964732, "process_user_time": 3.094805, "process_kernel_time": 0.332666, "process_mem_max_rss": "234348", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m07:31:43.052496 [debug] [MainThread]: Command `dbt run` failed at 07:31:43.052387 after 1.60 seconds
+[0m07:31:43.052929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd71deb5e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6fb35f260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6fb8c77a0>]}
+[0m07:31:43.053282 [debug] [MainThread]: Flushing usage events
+[0m07:33:56.494257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf48f121e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf48c210d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf4869de80>]}
+
+
+============================== 07:33:56.495764 | b2cfe23a-0a68-4d25-a1e3-3163edea5fee ==============================
+[0m07:33:56.495764 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:33:56.496301 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'no_print': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'partial_parse': 'True', 'debug': 'False', 'log_format': 'default', 'printer_width': '80', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'write_json': 'True', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'quiet': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:33:57.245948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf256c7800>]}
+[0m07:33:57.289197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf259e8710>]}
+[0m07:33:57.289804 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:33:57.307217 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:33:57.463377 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m07:33:57.463996 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/sources.yml
+[0m07:33:57.464449 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/external_table.sql
+[0m07:33:57.669379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2548f170>]}
+[0m07:33:57.742543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2548deb0>]}
+[0m07:33:57.743017 [info ] [MainThread]: Found 2 models, 1 source, 600 macros
+[0m07:33:57.743396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2548b0b0>]}
+[0m07:33:57.745130 [info ] [MainThread]: 
+[0m07:33:57.746015 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:33:57.751783 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m07:33:57.752646 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:33:59.248243 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m07:33:59.249010 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:34:00.514656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf47ff6900>]}
+[0m07:34:00.516305 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:34:00.517419 [info ] [MainThread]: 
+[0m07:34:00.521336 [debug] [Thread-1 (]: Began running node model.healthcare.external_table
+[0m07:34:00.521994 [info ] [Thread-1 (]: 1 of 2 START sql table model healthcare.external_table ......................... [RUN]
+[0m07:34:00.522597 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.external_table)
+[0m07:34:00.523118 [debug] [Thread-1 (]: Began compiling node model.healthcare.external_table
+[0m07:34:00.531463 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.external_table"
+[0m07:34:00.532391 [debug] [Thread-1 (]: Began executing node model.healthcare.external_table
+[0m07:34:00.572022 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.external_table"
+[0m07:34:00.572724 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:34:00.574200 [debug] [Thread-1 (]: On model.healthcare.external_table: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.external_table"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`external_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    *
+FROM
+    EXTERNAL_QUERY('healthcare-data-pipeline', 'SELECT * FROM `healthcare-data-pipeline.healthcare.icd_raw_data`')
+    );
+  
+[0m07:34:01.869778 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:286a6014-984e-48d5-8b71-7bc86ecf36fa&page=queryresults
+[0m07:34:01.871428 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}; reason: invalid, message: Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}')
+[0m07:34:02.545010 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:a0b0f225-20bf-4a1c-8b4a-1bdb9bddd645&page=queryresults
+[0m07:34:02.546619 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:a0b0f225-20bf-4a1c-8b4a-1bdb9bddd645&page=queryresults
+[0m07:34:02.550594 [debug] [Thread-1 (]: Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:34:02.551769 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b2cfe23a-0a68-4d25-a1e3-3163edea5fee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf4861ba70>]}
+[0m07:34:02.552348 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model healthcare.external_table ................ [[31mERROR[0m in 2.03s]
+[0m07:34:02.553081 [debug] [Thread-1 (]: Finished running node model.healthcare.external_table
+[0m07:34:02.554625 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m07:34:02.555113 [info ] [Thread-1 (]: 2 of 2 SKIP relation healthcare.transform_icd_data ............................. [[33mSKIP[0m]
+[0m07:34:02.555568 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m07:34:02.557374 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:34:02.557833 [debug] [MainThread]: Connection 'model.healthcare.external_table' was properly closed.
+[0m07:34:02.558330 [info ] [MainThread]: 
+[0m07:34:02.558790 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 4.81 seconds (4.81s).
+[0m07:34:02.559610 [debug] [MainThread]: Command end result
+[0m07:34:02.595444 [info ] [MainThread]: 
+[0m07:34:02.595951 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:34:02.596325 [info ] [MainThread]: 
+[0m07:34:02.596823 [error] [MainThread]:   Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:34:02.597217 [info ] [MainThread]: 
+[0m07:34:02.597627 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m07:34:02.598465 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.142942, "process_user_time": 3.411719, "process_kernel_time": 0.141733, "process_mem_max_rss": "234140", "process_in_blocks": "1104", "process_out_blocks": "3704", "command_success": false}
+[0m07:34:02.598924 [debug] [MainThread]: Command `dbt run` failed at 07:34:02.598826 after 6.14 seconds
+[0m07:34:02.599282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf487bfb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf2529c320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcf48111400>]}
+[0m07:34:02.599613 [debug] [MainThread]: Flushing usage events
+[0m07:35:57.430897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fae429640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8facf12840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fac6ceb70>]}
+
+
+============================== 07:35:57.432856 | 2d180044-b9bc-43cf-a7a0-eeb1143087bd ==============================
+[0m07:35:57.432856 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:35:57.433461 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'partial_parse': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'use_colors': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'debug': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'log_format': 'default', 'version_check': 'True', 'warn_error': 'None', 'no_print': 'None', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs'}
+[0m07:35:58.210612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fadbd0c50>]}
+[0m07:35:58.256631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f8ab8b110>]}
+[0m07:35:58.257258 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:35:58.273161 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:35:58.419946 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:35:58.420347 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:35:58.445941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f89c89460>]}
+[0m07:35:58.526888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f89b979e0>]}
+[0m07:35:58.527345 [info ] [MainThread]: Found 2 models, 1 source, 600 macros
+[0m07:35:58.527876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fac427620>]}
+[0m07:35:58.529457 [info ] [MainThread]: 
+[0m07:35:58.530107 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:35:58.533462 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m07:35:58.533819 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:35:59.877693 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m07:35:59.878953 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:36:01.572351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f89cb04d0>]}
+[0m07:36:01.572971 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:36:01.573379 [info ] [MainThread]: 
+[0m07:36:01.576387 [debug] [Thread-1 (]: Began running node model.healthcare.external_table
+[0m07:36:01.576979 [info ] [Thread-1 (]: 1 of 2 START sql table model healthcare.external_table ......................... [RUN]
+[0m07:36:01.577531 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.external_table)
+[0m07:36:01.578614 [debug] [Thread-1 (]: Began compiling node model.healthcare.external_table
+[0m07:36:01.591399 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.external_table"
+[0m07:36:01.592475 [debug] [Thread-1 (]: Began executing node model.healthcare.external_table
+[0m07:36:01.628230 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.external_table"
+[0m07:36:01.628910 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:36:01.630250 [debug] [Thread-1 (]: On model.healthcare.external_table: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.external_table"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`external_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    *
+FROM
+    EXTERNAL_QUERY('healthcare-data-pipeline', 'SELECT * FROM `healthcare-data-pipeline.healthcare.icd_raw_data`')
+    );
+  
+[0m07:36:02.849874 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:0e373664-08bd-49aa-94aa-7c81d5d704bf&page=queryresults
+[0m07:36:02.850583 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}; reason: invalid, message: Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}')
+[0m07:36:04.493931 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:d10dff9e-5d69-481c-b018-fa36aeb07043&page=queryresults
+[0m07:36:04.494587 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:d10dff9e-5d69-481c-b018-fa36aeb07043&page=queryresults
+[0m07:36:04.498754 [debug] [Thread-1 (]: Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:36:04.500157 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2d180044-b9bc-43cf-a7a0-eeb1143087bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f89c064e0>]}
+[0m07:36:04.500874 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model healthcare.external_table ................ [[31mERROR[0m in 2.92s]
+[0m07:36:04.501739 [debug] [Thread-1 (]: Finished running node model.healthcare.external_table
+[0m07:36:04.503978 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m07:36:04.504539 [info ] [Thread-1 (]: 2 of 2 SKIP relation healthcare.transform_icd_data ............................. [[33mSKIP[0m]
+[0m07:36:04.505125 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m07:36:04.506977 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:36:04.507359 [debug] [MainThread]: Connection 'model.healthcare.external_table' was properly closed.
+[0m07:36:04.507786 [info ] [MainThread]: 
+[0m07:36:04.508210 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.98 seconds (5.98s).
+[0m07:36:04.509172 [debug] [MainThread]: Command end result
+[0m07:36:04.550525 [info ] [MainThread]: 
+[0m07:36:04.551137 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:36:04.551639 [info ] [MainThread]: 
+[0m07:36:04.552181 [error] [MainThread]:   Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:36:04.552576 [info ] [MainThread]: 
+[0m07:36:04.553059 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m07:36:04.554240 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 7.1633735, "process_user_time": 2.851943, "process_kernel_time": 0.273058, "process_mem_max_rss": "237704", "process_out_blocks": "2464", "command_success": false, "process_in_blocks": "0"}
+[0m07:36:04.554754 [debug] [MainThread]: Command `dbt run` failed at 07:36:04.554631 after 7.16 seconds
+[0m07:36:04.555132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fac6ceb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f8a89aae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f89eab6e0>]}
+[0m07:36:04.555483 [debug] [MainThread]: Flushing usage events
+[0m07:48:30.468165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849f14260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484a50cd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849f16090>]}
+
+
+============================== 07:48:30.469826 | 6de56cb4-2c4d-4b07-9e0a-c97bcee7292c ==============================
+[0m07:48:30.469826 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:48:30.470427 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'fail_fast': 'False', 'log_cache_events': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'introspect': 'True', 'debug': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False', 'target_path': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'version_check': 'True', 'static_parser': 'True', 'warn_error': 'None', 'no_print': 'None', 'write_json': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m07:48:31.235464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6de56cb4-2c4d-4b07-9e0a-c97bcee7292c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484b1f0a70>]}
+[0m07:48:31.278033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6de56cb4-2c4d-4b07-9e0a-c97bcee7292c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f482cc61280>]}
+[0m07:48:31.278625 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:48:31.295557 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:48:31.455751 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:48:31.456297 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/transform/transform_icd_data.sql
+[0m07:48:31.586448 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare.transform_icd_data' (models/transform/transform_icd_data.sql) depends on a source named 'healthcare.external_table' which was not found
+[0m07:48:31.587870 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1559197, "process_user_time": 2.820223, "process_kernel_time": 0.118746, "process_mem_max_rss": "229964", "process_in_blocks": "8", "process_out_blocks": "16", "command_success": false}
+[0m07:48:31.588429 [debug] [MainThread]: Command `dbt run` failed at 07:48:31.588304 after 1.16 seconds
+[0m07:48:31.588775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849a6ca70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48274bc710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849a4b890>]}
+[0m07:48:31.589096 [debug] [MainThread]: Flushing usage events
+[0m07:48:54.608139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4b237530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4d610ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4ae928d0>]}
+
+
+============================== 07:48:54.609893 | 85188f59-89f1-4772-97d2-6fb00120f429 ==============================
+[0m07:48:54.609893 [info ] [MainThread]: Running with dbt=1.8.7
+[0m07:48:54.610549 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'write_json': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'debug': 'False', 'no_print': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'fail_fast': 'False', 'version_check': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error': 'None', 'printer_width': '80', 'use_colors': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m07:48:55.623002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c6222a0>]}
+[0m07:48:55.671137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4b185670>]}
+[0m07:48:55.671857 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m07:48:55.692828 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m07:48:55.860834 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:48:55.861245 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:48:55.889388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4accee10>]}
+[0m07:48:55.964500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c30f710>]}
+[0m07:48:55.964997 [info ] [MainThread]: Found 2 models, 1 source, 600 macros
+[0m07:48:55.965419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c64ce30>]}
+[0m07:48:55.966928 [info ] [MainThread]: 
+[0m07:48:55.967516 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:48:55.971690 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m07:48:55.972145 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:48:57.517480 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m07:48:57.517940 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:48:58.848449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c4dedb0>]}
+[0m07:48:58.849030 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:48:58.849421 [info ] [MainThread]: 
+[0m07:48:58.851761 [debug] [Thread-1 (]: Began running node model.healthcare.external_table
+[0m07:48:58.852338 [info ] [Thread-1 (]: 1 of 2 START sql table model healthcare.external_table ......................... [RUN]
+[0m07:48:58.852824 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.external_table)
+[0m07:48:58.853804 [debug] [Thread-1 (]: Began compiling node model.healthcare.external_table
+[0m07:48:58.864654 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.external_table"
+[0m07:48:58.865444 [debug] [Thread-1 (]: Began executing node model.healthcare.external_table
+[0m07:48:58.903985 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.external_table"
+[0m07:48:58.904653 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:48:58.906168 [debug] [Thread-1 (]: On model.healthcare.external_table: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.external_table"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`external_table`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+SELECT
+    *
+FROM
+    EXTERNAL_QUERY('healthcare-data-pipeline', 'SELECT * FROM `healthcare-data-pipeline.healthcare.icd_raw_data`')
+    );
+  
+[0m07:49:00.316844 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:148a979f-9a51-4488-aaab-558768267e46&page=queryresults
+[0m07:49:00.318364 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}; reason: invalid, message: Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}')
+[0m07:49:01.226909 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:498b739d-ac67-4b33-a37b-1de91190ee26&page=queryresults
+[0m07:49:01.228807 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:498b739d-ac67-4b33-a37b-1de91190ee26&page=queryresults
+[0m07:49:01.236566 [debug] [Thread-1 (]: Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:49:01.237930 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '85188f59-89f1-4772-97d2-6fb00120f429', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c310b30>]}
+[0m07:49:01.238643 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model healthcare.external_table ................ [[31mERROR[0m in 2.38s]
+[0m07:49:01.239632 [debug] [Thread-1 (]: Finished running node model.healthcare.external_table
+[0m07:49:01.241768 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m07:49:01.242363 [info ] [Thread-1 (]: 2 of 2 SKIP relation healthcare.transform_icd_data ............................. [[33mSKIP[0m]
+[0m07:49:01.242985 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m07:49:01.244943 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:49:01.245792 [debug] [MainThread]: Connection 'model.healthcare.external_table' was properly closed.
+[0m07:49:01.246431 [info ] [MainThread]: 
+[0m07:49:01.247040 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 5.28 seconds (5.28s).
+[0m07:49:01.247940 [debug] [MainThread]: Command end result
+[0m07:49:01.283976 [info ] [MainThread]: 
+[0m07:49:01.284483 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:49:01.284894 [info ] [MainThread]: 
+[0m07:49:01.285357 [error] [MainThread]:   Database Error in model external_table (models/sources/external_table.sql)
+  Connection name should conform to the pattern: projects/{project_id=*}/locations/{location_id=*}/connections/{connection_id=*}
+  compiled code at target/run/healthcare/models/sources/external_table.sql
+[0m07:49:01.285723 [info ] [MainThread]: 
+[0m07:49:01.286143 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m07:49:01.286931 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 6.727281, "process_user_time": 3.480742, "process_kernel_time": 0.149174, "process_mem_max_rss": "238500", "process_out_blocks": "2464", "command_success": false, "process_in_blocks": "0"}
+[0m07:49:01.287411 [debug] [MainThread]: Command `dbt run` failed at 07:49:01.287313 after 6.73 seconds
+[0m07:49:01.287772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c4d610ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c4285f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c2c6b0380>]}
+[0m07:49:01.288097 [debug] [MainThread]: Flushing usage events
+[0m08:06:11.327984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa281933260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27f0f8bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27feb5d90>]}
+
+
+============================== 08:06:11.329435 | 6ceff5fc-a73d-4457-b2b6-1cd910c82736 ==============================
+[0m08:06:11.329435 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:06:11.330018 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'static_parser': 'True', 'debug': 'False', 'partial_parse': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'use_colors': 'True', 'printer_width': '80', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt deps', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt'}
+[0m08:06:11.413302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ceff5fc-a73d-4457-b2b6-1cd910c82736', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27ed91df0>]}
+[0m08:06:11.429726 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-jxxpla3_'
+[0m08:06:11.430081 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m08:06:11.544214 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m08:06:11.544868 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m08:06:11.566907 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m08:06:11.571098 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m08:06:12.234218 [info ] [MainThread]: Installed from version 1.3.0
+[0m08:06:12.234615 [info ] [MainThread]: Up to date!
+[0m08:06:12.235011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '6ceff5fc-a73d-4457-b2b6-1cd910c82736', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27ec5e030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27ecdb110>]}
+[0m08:06:12.235948 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.94735837, "process_user_time": 1.187996, "process_kernel_time": 0.087639, "process_mem_max_rss": "96232", "process_in_blocks": "2776", "process_out_blocks": "2304"}
+[0m08:06:12.236332 [debug] [MainThread]: Command `dbt deps` succeeded at 08:06:12.236249 after 0.95 seconds
+[0m08:06:12.236602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27f0f8bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa27edc6d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2804f4c20>]}
+[0m08:06:12.236854 [debug] [MainThread]: Flushing usage events
+[0m08:06:21.255546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c5f81bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c800cfe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c60f31d0>]}
+
+
+============================== 08:06:21.256969 | b4cd52d8-03e3-4c95-bf67-079846434e24 ==============================
+[0m08:06:21.256969 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:06:21.257574 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'debug': 'False', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'warn_error': 'None', 'static_parser': 'True', 'write_json': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'empty': 'False', 'no_print': 'None', 'introspect': 'True'}
+[0m08:06:22.087938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b4cd52d8-03e3-4c95-bf67-079846434e24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9a32f5b80>]}
+[0m08:06:22.130193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b4cd52d8-03e3-4c95-bf67-079846434e24', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c66f4320>]}
+[0m08:06:22.130743 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m08:06:22.146322 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m08:06:22.298080 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 0 files changed.
+[0m08:06:22.298614 [debug] [MainThread]: Partial parsing: deleted file: healthcare://models/sources/external_table.sql
+[0m08:06:22.425796 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare.transform_icd_data' (models/transform/transform_icd_data.sql) depends on a node named 'external_table' which was not found
+[0m08:06:22.426783 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.2063274, "process_user_time": 2.730289, "process_kernel_time": 0.119139, "process_mem_max_rss": "229892", "process_in_blocks": "4432", "process_out_blocks": "8", "command_success": false}
+[0m08:06:22.427497 [debug] [MainThread]: Command `dbt run` failed at 08:06:22.427329 after 1.21 seconds
+[0m08:06:22.428012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9c945aea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9a338eab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa9a2faeb40>]}
+[0m08:06:22.428521 [debug] [MainThread]: Flushing usage events
+[0m08:09:49.333218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7c994d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7ce57110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7ce54ad0>]}
+
+
+============================== 08:09:49.334698 | 4872b2ff-6caa-4f05-a816-f762abe4d0dd ==============================
+[0m08:09:49.334698 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:09:49.335280 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'write_json': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'quiet': 'False', 'debug': 'False', 'warn_error': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'empty': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'use_colors': 'True'}
+[0m08:09:50.087323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4872b2ff-6caa-4f05-a816-f762abe4d0dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7dc04e00>]}
+[0m08:09:50.129948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4872b2ff-6caa-4f05-a816-f762abe4d0dd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7c94d8e0>]}
+[0m08:09:50.130509 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m08:09:50.148200 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m08:09:50.294840 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 1 files changed.
+[0m08:09:50.295411 [debug] [MainThread]: Partial parsing: deleted file: healthcare://models/sources/external_table.sql
+[0m08:09:50.295845 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/transform/transform_icd_data.sql
+[0m08:09:50.427131 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare.transform_icd_data' (models/transform/transform_icd_data.sql) depends on a source named 'healthcare.raw_icd_data' which was not found
+[0m08:09:50.428206 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.1295046, "process_user_time": 2.750388, "process_kernel_time": 0.089362, "process_mem_max_rss": "232008", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m08:09:50.428899 [debug] [MainThread]: Command `dbt run` failed at 08:09:50.428763 after 1.13 seconds
+[0m08:09:50.429315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e7ce54ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e59b8bb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0e59ba2ea0>]}
+[0m08:09:50.429618 [debug] [MainThread]: Flushing usage events
+[0m08:10:44.685470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f3daabd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f3e76c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f4776c30>]}
+
+
+============================== 08:10:44.686972 | 7eb524cd-5620-439a-ae18-ca0bd874031b ==============================
+[0m08:10:44.686972 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:10:44.687534 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'empty': 'False', 'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'static_parser': 'True', 'no_print': 'None', 'write_json': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'profiles_dir': '/usr/local/airflow/include/dbt/'}
+[0m08:10:45.480378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d15825a0>]}
+[0m08:10:45.522727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d16af680>]}
+[0m08:10:45.523272 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m08:10:45.539618 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m08:10:45.708441 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 0 files added, 2 files changed.
+[0m08:10:45.709222 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/sources/sources.yml
+[0m08:10:45.709816 [debug] [MainThread]: Partial parsing: deleted file: healthcare://models/sources/external_table.sql
+[0m08:10:45.710219 [debug] [MainThread]: Partial parsing: updated file: healthcare://models/transform/transform_icd_data.sql
+[0m08:10:45.981573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d1323380>]}
+[0m08:10:46.073596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d1397560>]}
+[0m08:10:46.074245 [info ] [MainThread]: Found 1 model, 1 source, 600 macros
+[0m08:10:46.074659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d1322060>]}
+[0m08:10:46.076227 [info ] [MainThread]: 
+[0m08:10:46.077107 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:10:46.078257 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m08:10:46.078801 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:10:47.604882 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m08:10:47.605904 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:10:48.773046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f3fcd670>]}
+[0m08:10:48.774582 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:10:48.775603 [info ] [MainThread]: 
+[0m08:10:48.780302 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m08:10:48.781156 [info ] [Thread-1 (]: 1 of 1 START sql table model healthcare.transform_icd_data ..................... [RUN]
+[0m08:10:48.781751 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.transform_icd_data)
+[0m08:10:48.782136 [debug] [Thread-1 (]: Began compiling node model.healthcare.transform_icd_data
+[0m08:10:48.791041 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.transform_icd_data"
+[0m08:10:48.792140 [debug] [Thread-1 (]: Began executing node model.healthcare.transform_icd_data
+[0m08:10:48.830454 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.transform_icd_data"
+[0m08:10:48.831220 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:10:48.832480 [debug] [Thread-1 (]: On model.healthcare.transform_icd_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.transform_icd_data"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`transform_icd_data`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH icd_raw_data AS (
+    SELECT
+        *
+    FROM
+        `healthcare-data-pipeline`.`healthcare`.`raw_icd_data`  -- Update to use the source function
+)
+
+SELECT
+    -- Select and transform each column as specified
+    code_category,
+    code_category_description,
+    
+    -- Include only rows where icd_code is not null
+    icd_code,
+    
+    -- Clean up disease_description: trim spaces and replace () with []
+    REPLACE(
+        REPLACE(TRIM(disease_description), '(', '['), ')', ']'
+    ) AS disease_description
+FROM
+    icd_raw_data
+WHERE
+    icd_code IS NOT NULL
+    );
+  
+[0m08:10:50.500551 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:79871003-b999-47eb-b42c-3bec3595cedc&page=queryresults
+[0m08:10:53.376056 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eb524cd-5620-439a-ae18-ca0bd874031b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01d22f6e70>]}
+[0m08:10:53.376650 [info ] [Thread-1 (]: 1 of 1 OK created sql table model healthcare.transform_icd_data ................ [[32mCREATE TABLE (1.6k rows, 172.8 KiB processed)[0m in 4.59s]
+[0m08:10:53.377395 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m08:10:53.379308 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:10:53.379597 [debug] [MainThread]: Connection 'model.healthcare.transform_icd_data' was properly closed.
+[0m08:10:53.379878 [info ] [MainThread]: 
+[0m08:10:53.380203 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.30 seconds (7.30s).
+[0m08:10:53.380967 [debug] [MainThread]: Command end result
+[0m08:10:53.415451 [info ] [MainThread]: 
+[0m08:10:53.415960 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:10:53.416370 [info ] [MainThread]: 
+[0m08:10:53.416784 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m08:10:53.417553 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.770022, "process_user_time": 3.382079, "process_kernel_time": 0.089525, "process_mem_max_rss": "233512", "process_out_blocks": "3688", "process_in_blocks": "0"}
+[0m08:10:53.418030 [debug] [MainThread]: Command `dbt run` succeeded at 08:10:53.417934 after 8.77 seconds
+[0m08:10:53.418382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f3dd1820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f51c90a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01f51c8ce0>]}
+[0m08:10:53.418705 [debug] [MainThread]: Flushing usage events
+[0m08:28:42.318258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774d56c980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774cc0aae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774cf61dc0>]}
+
+
+============================== 08:28:42.320304 | ad7277e5-44d0-4999-8e56-d4ca404520f0 ==============================
+[0m08:28:42.320304 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:28:42.321097 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt deps', 'partial_parse': 'True', 'debug': 'False', 'static_parser': 'True', 'warn_error': 'None', 'log_format': 'default', 'no_print': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'empty': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt'}
+[0m08:28:42.411138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad7277e5-44d0-4999-8e56-d4ca404520f0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774ca006e0>]}
+[0m08:28:42.428403 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-adk5swru'
+[0m08:28:42.428973 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m08:28:42.537270 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m08:28:42.538107 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m08:28:42.564433 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m08:28:42.569887 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m08:28:43.516023 [info ] [MainThread]: Installed from version 1.3.0
+[0m08:28:43.516483 [info ] [MainThread]: Up to date!
+[0m08:28:43.516984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ad7277e5-44d0-4999-8e56-d4ca404520f0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774daa7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774ca02810>]}
+[0m08:28:43.517919 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.2392334, "process_user_time": 1.272529, "process_kernel_time": 0.139182, "process_mem_max_rss": "96000", "process_in_blocks": "320", "process_out_blocks": "2304"}
+[0m08:28:43.518419 [debug] [MainThread]: Command `dbt deps` succeeded at 08:28:43.518318 after 1.24 seconds
+[0m08:28:43.518719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774d5bb2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774daa7b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f774c8dbc50>]}
+[0m08:28:43.519001 [debug] [MainThread]: Flushing usage events
+[0m08:28:50.802506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb7102f5130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb70e154890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb70ddc3d40>]}
+
+
+============================== 08:28:50.804362 | 13a3ca4f-fdaf-45aa-b427-e82b35266957 ==============================
+[0m08:28:50.804362 [info ] [MainThread]: Running with dbt=1.8.7
+[0m08:28:50.805019 [debug] [MainThread]: running dbt with arguments {'empty': 'False', 'quiet': 'False', 'static_parser': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'printer_width': '80', 'partial_parse': 'True', 'no_print': 'None', 'introspect': 'True', 'target_path': 'None', 'warn_error': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_path': '/usr/local/airflow/include/dbt/logs', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'version_check': 'True', 'fail_fast': 'False'}
+[0m08:28:51.629073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6ebaadaf0>]}
+[0m08:28:51.671909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6eb68b230>]}
+[0m08:28:51.672473 [info ] [MainThread]: Registered adapter: bigquery=1.8.3
+[0m08:28:51.690447 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m08:28:51.836552 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:28:51.837072 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:28:51.861874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6eb294ef0>]}
+[0m08:28:51.932237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6eaf0b170>]}
+[0m08:28:51.932685 [info ] [MainThread]: Found 1 model, 1 source, 600 macros
+[0m08:28:51.933024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb70ea36630>]}
+[0m08:28:51.934602 [info ] [MainThread]: 
+[0m08:28:51.935204 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m08:28:51.936248 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_healthcare-data-pipeline'
+[0m08:28:51.936588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:28:53.134889 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline, now list_healthcare-data-pipeline_healthcare)
+[0m08:28:53.135471 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:28:54.361526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6eb22ac30>]}
+[0m08:28:54.362022 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:28:54.362356 [info ] [MainThread]: 
+[0m08:28:54.364971 [debug] [Thread-1 (]: Began running node model.healthcare.transform_icd_data
+[0m08:28:54.366470 [info ] [Thread-1 (]: 1 of 1 START sql table model healthcare.transform_icd_data ..................... [RUN]
+[0m08:28:54.367044 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_healthcare-data-pipeline_healthcare, now model.healthcare.transform_icd_data)
+[0m08:28:54.367532 [debug] [Thread-1 (]: Began compiling node model.healthcare.transform_icd_data
+[0m08:28:54.377735 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare.transform_icd_data"
+[0m08:28:54.378437 [debug] [Thread-1 (]: Began executing node model.healthcare.transform_icd_data
+[0m08:28:54.393937 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:28:55.636128 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare.transform_icd_data"
+[0m08:28:55.636920 [debug] [Thread-1 (]: On model.healthcare.transform_icd_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "healthcare", "target_name": "dev", "node_id": "model.healthcare.transform_icd_data"} */
+
+  
+    
+
+    create or replace table `healthcare-data-pipeline`.`healthcare`.`transform_icd_data`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      WITH icd_raw_data AS (
+    SELECT
+        *
+    FROM
+        `healthcare-data-pipeline`.`healthcare`.`raw_icd_data`  -- Update to use the source function
+)
+
+SELECT
+    -- Select and transform each column as specified
+    code_category,
+    code_category_description,
+    
+    -- Include only rows where icd_code is not null
+    icd_code,
+    
+    -- Clean up disease_description: trim spaces and replace () with []
+    REPLACE(
+        REPLACE(TRIM(disease_description), '(', '['), ')', ']'
+    ) AS disease_description
+FROM
+    icd_raw_data
+WHERE
+    icd_code IS NOT NULL
+    );
+  
+[0m08:28:56.331749 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=healthcare-data-pipeline&j=bq:US:f73e7536-0869-4809-9929-7540a4171db8&page=queryresults
+[0m08:28:59.297843 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '13a3ca4f-fdaf-45aa-b427-e82b35266957', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6ebfcad80>]}
+[0m08:28:59.298702 [info ] [Thread-1 (]: 1 of 1 OK created sql table model healthcare.transform_icd_data ................ [[32mCREATE TABLE (1.6k rows, 172.8 KiB processed)[0m in 4.93s]
+[0m08:28:59.299693 [debug] [Thread-1 (]: Finished running node model.healthcare.transform_icd_data
+[0m08:28:59.301639 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:28:59.301956 [debug] [MainThread]: Connection 'model.healthcare.transform_icd_data' was properly closed.
+[0m08:28:59.302269 [info ] [MainThread]: 
+[0m08:28:59.302659 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.37 seconds (7.37s).
+[0m08:28:59.303597 [debug] [MainThread]: Command end result
+[0m08:28:59.343359 [info ] [MainThread]: 
+[0m08:28:59.344108 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:28:59.344656 [info ] [MainThread]: 
+[0m08:28:59.345286 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m08:28:59.346386 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.579307, "process_user_time": 3.078668, "process_kernel_time": 0.101271, "process_mem_max_rss": "231984", "process_in_blocks": "352", "process_out_blocks": "2456"}
+[0m08:28:59.347197 [debug] [MainThread]: Command `dbt run` succeeded at 08:28:59.347033 after 8.58 seconds
+[0m08:28:59.347730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb70dd48440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb70e782900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb6ebfefaa0>]}
+[0m08:28:59.348242 [debug] [MainThread]: Flushing usage events

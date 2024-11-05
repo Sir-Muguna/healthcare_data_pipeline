@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: healthcare_raw
+    database: healthcare-data-pipeline  # project ID
+    tables:
+      - name: raw_icd_data
+      - name: raw_hospital_general_info
+      - name: raw_inpatient_2011
+      - name: raw_inpatient_2012
+      - name: raw_inpatient_2013
+      - name: raw_outpatient_charges_2011
+      - name: raw_outpatient_charges_2012
+      - name: raw_outpatient_charges_2013
