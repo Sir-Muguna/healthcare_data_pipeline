@@ -1,7 +1,3 @@
-The README content is comprehensive, but a few areas can be refined and clarified for readability. Here are the updates:
-
----
-
 # Healthcare ETL Data Pipeline
 ![MetaData](include/images/end-to-end_airflow.png)
 
@@ -111,8 +107,8 @@ The pipeline can be triggered manually or scheduled monthly, following DAG-defin
    - **images/**: Stores documentation and dashboard-related images.
    - **powerbi/**:
      - `healthcare_dashboard.pbix`: Main Power BI dashboard file.
-     - `report file`: Supplementary Power BI report file, if any.
+     - `report file`: Power BI report file.
 
 3. **scripts/**: Custom scripts for tasks like data cleaning, transformations, and automation.
-4. **sources/**: Contains connectors or references to primary data sources (e.g., database credentials, API connection settings, CSV/JSON files). 
+4. **sources/**: Contains connectors or references to primary data sources (e.g., database & CSV/JSON files). 
 
