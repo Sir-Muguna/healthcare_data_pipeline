@@ -100,5 +100,34 @@ The pipeline can be triggered manually or scheduled monthly, following the depen
 - **Data Sources**: Located in `/usr/local/airflow/include/sources/`
 - **Transformed Data**: Output stored in BigQuery `healthcare_transformed` dataset
 
+## Breakdown of the project structure:
+1. **dags/**: Contains Airflow DAGs for orchestrating tasks in the data pipelines.
+o __pycache__/: Python bytecode cache to improve loading times.
+o .airflowignore: Excludes specified files or directories from being processed as DAGs,
+streamlining performance.
+o health_data_pipeline.py: A specific DAG script designed to process healthcare data,
+with tasks potentially covering data extraction, transformation, and loading (ETL)
+phases, all managed by Airflow.
 
+2. **include/**: Holds supplementary modules, configuration files, and data resources.
+o dataset/: Contains raw or intermediate datasets used to be transformed and
+uploaded to GCS abd BigQuery.
+o dbt/: Includes dbt models, configurations, and transformations. dbt helps convert
+raw data into a more usable format within a data warehouse, often as SQL scripts
+and YAML configurations.
+o gcp/: Contains configuration files (e.g., service account keys, settings) for integrating
+with Google Cloud Platform services like BigQuery, Cloud Storage, etc.
+o images/: Stores images for use in documentation or in reports/dashboards, which
+can include logos, charts, or any graphical assets.
+o powerbi/: Power BI resources:
+▪ healthcare dashboard.pbix: The main Power BI dashboard file, likely
+containing visualizations and data analysis tailored to healthcare data.
+▪ report file: Another Power BI file, possibly a draft, variant, or supplementary
+report that accompanies the main dashboard.
+
+3. **scripts/**: Custom scripts, likely Python or shell scripts, designed for specialized tasks like data
+cleaning, transformations, and automating repetitive processes.
+4. **sources/**: Holds references or connectors to primary data sources. This can include database
+credentials, API connection settings, or CSV/JSON files from external sources that feed into
+the data pipeline.
 
