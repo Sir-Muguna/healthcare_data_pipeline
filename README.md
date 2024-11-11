@@ -1,133 +1,118 @@
-# Healthcare ETL Data Pipeline
-![MetaData](include/images/end-to-end_airflow.png) 
+The README content is comprehensive, but a few areas can be refined and clarified for readability. Here are the updates:
 
-This project is an ETL (Extract, Transform, Load) pipeline for processing healthcare data using [Apache Airflow](https://airflow.apache.org/). The pipeline automates tasks for data extraction, transformation, loading to Google Cloud Storage (GCS) and BigQuery, and further data processing with DBT (Data Build Tool) and connects to PowerBI for data visualization.
+---
+
+# Healthcare ETL Data Pipeline
+![MetaData](include/images/end-to-end_airflow.png)
+
+This project is an ETL (Extract, Transform, Load) pipeline for processing healthcare data using [Apache Airflow](https://airflow.apache.org/). The pipeline automates tasks for data extraction, transformation, and loading into Google Cloud Storage (GCS) and BigQuery, followed by further processing using DBT (Data Build Tool) and connecting to Power BI for data visualization.
 
 ## Project Overview
 
-This pipeline runs on a monthly schedule, starting with file validation, and progressing through the extraction, transformation, and loading steps, ending with BigQuery and DBT processing. It utilizes task groups for organizing related tasks within the Airflow DAG for better readability and management.
+The pipeline is scheduled to run monthly, starting with file validation and progressing through extraction, transformation, loading, and BigQuery processing. Task groups organize related tasks within the Airflow DAG for better readability and management.
 
 ## DAG Structure
 
 - **DAG Name**: `health_etl_data`
-- **Description**: A DAG to extract, transform, upload, and process healthcare data
+- **Description**: A DAG to extract, transform, upload, and process healthcare data.
 - **Schedule**: Monthly
 - **Owner**: Airflow
 
 ## Pipeline Components
-![MetaData](include/images/airflow_dag.png) 
+![MetaData](include/images/airflow_dag.png)
 
 ### Data Extraction
-Tasks in this group extract data from multiple sources.
+This group extracts data from multiple sources:
 
 - **`download_google_files`**: Downloads files from Google Drive.
 - **`export_sqltables_to_csv`**: Exports data from SQLite tables to CSV files.
 - **`extract_icd_data`**: Extracts ICD (International Classification of Diseases) data in JSON format.
 
-### Transformation
-Tasks in this group perform data transformations.
+### Data Transformation
+This group performs necessary transformations:
 
-- **`transform_json_to_csv`**: Converts JSON files to CSV format for consistency.
+- **`transform_json_to_csv`**: Converts JSON files to CSV format.
 - **`process_inpatient_outpatient_files`**: Processes inpatient and outpatient data files using configuration settings.
 - **`hospitalinfo_clean_task`**: Cleans hospital information data.
 
 ### Upload to GCS
-![MetaData](include/images/gcs.png) 
+![MetaData](include/images/gcs.png)
 
-This task group uploads CSV files to Google Cloud Storage (GCS).
-
-Each CSV file is uploaded to a designated GCS bucket and path, where it is later accessible for loading into BigQuery.
+Uploads CSV files to designated Google Cloud Storage (GCS) buckets and paths for later BigQuery loading.
 
 ### BigQuery and DBT Processing
-![MetaData](include/images/bigquery.png) 
-Tasks in this group handle loading data into BigQuery and further processing using DBT models.
+![MetaData](include/images/bigquery.png)
+
+Loads data into BigQuery and processes it further with DBT models:
 
 - **BigQuery Dataset Creation**: Creates datasets for raw and transformed healthcare data.
 - **`gcs_to_raw` Tasks**: Loads CSV files from GCS into BigQuery tables in the `healthcare_raw` dataset.
-- **DBT Transformation**: Uses DBT to transform and organize data in BigQuery, making it ready for downstream analysis.
+- **DBT Transformation**: Uses DBT to transform and organize data in BigQuery, preparing it for downstream analysis.
 
 ### Connecting BigQuery with Power BI
-Once the data has been processed and stored in BigQuery, this task group involves connecting BigQuery to Power BI to build an interactive dashboard for healthcare data analysis.
+Once the data is stored in BigQuery, it connects to Power BI for creating an interactive healthcare dashboard:
 
 1. **Set Up Power BI Connection**:
-   - Open Power BI Desktop.
-   - Choose **Get Data** > **Google BigQuery**.
-   - Authenticate with your Google account associated with the GCP project.
+   - In Power BI Desktop, select **Get Data** > **Google BigQuery**.
+   - Authenticate with the Google account associated with the GCP project.
 
 2. **Select and Transform Data**:
-   - After connecting, navigate to the `healthcare_transformed` dataset in BigQuery.
-   - Import relevant tables (e.g., inpatient, outpatient, ICD data).
-   - Apply necessary transformations (e.g., renaming columns, adjusting data types) directly in Power BI if needed.
+   - Navigate to the `healthcare_transformed` dataset in BigQuery and import relevant tables.
+   - Apply transformations in Power BI as needed (e.g., renaming columns, adjusting data types).
 
 3. **Design Power BI Dashboard**:
-   - Use Power BI's drag-and-drop functionality to design visuals, such as:
-     - **Charts**: Visualize healthcare trends across years.
-     - **KPIs**: Highlight key healthcare metrics.
-     - **Filters and Slicers**: Allow dynamic filtering based on various criteria (e.g., year, hospital type).
-   - Customize the dashboard layout for intuitive data analysis.
+   - Use Power BI's tools to design visuals, such as charts for healthcare trends, KPIs for metrics, and filters for dynamic data analysis.
 
 4. **Publish and Share**:
    - Publish the dashboard to the Power BI Service for online access.
-   - Schedule automatic data refreshes to keep the dashboard up-to-date with the latest BigQuery data.
+   - Schedule automatic data refreshes to keep the dashboard up-to-date with BigQuery data.
 
 ## Dashboard
 
-A simple interactive dashboard will be created on PowerBI for data analysis.
+An interactive Power BI dashboard will provide insights into healthcare data trends and metrics.
 
-![MetaData](include/images/HealthCare_Dashboard.png) 
+![MetaData](include/images/HealthCare_Dashboard.png)
 
 ## Prerequisites
 
-- **Apache Airflow** with required providers: `google-cloud`, `astro`, and `cosmos`
-- **Google Cloud Storage** and **BigQuery** credentials set up in Airflow as `gcp` connection
-- **DBT**: Requires DBT project and profiles configurations for BigQuery
+- **Apache Airflow** with providers for `google-cloud`, `astro`, and `cosmos`
+- **Google Cloud Storage** and **BigQuery** credentials configured in Airflow as `gcp` connection
+- **DBT** project and profiles configured for BigQuery
 - **Power BI Desktop** and **Power BI Pro** for publishing
 
 ## Environment Setup
 
-1. Ensure all required dependencies are installed in Airflow.
-2. Set up GCP credentials in Airflow and ensure the `gcp` connection is configured correctly.
-3. Configure paths in the `/usr/local/airflow/include/` directory for scripts, datasets, and config files.
+1. Install dependencies in Airflow.
+2. Configure GCP credentials in Airflow and ensure the `gcp` connection is properly set up.
+3. Set up the `/usr/local/airflow/include/` directory for scripts, datasets, and config files.
 
 ## Execution
 
-The pipeline can be triggered manually or scheduled monthly, following the dependencies defined in the DAG. Each task or task group may have a delay task to avoid race conditions.
+The pipeline can be triggered manually or scheduled monthly, following DAG-defined dependencies. Task delays are added where necessary to prevent race conditions.
 
 ## File Structure
 
 - **DAG File**: `dags/health_etl_data.py`
 - **Config Files**: `/usr/local/airflow/include/scripts/config.txt`
-- **Data Sources**: Located in `/usr/local/airflow/include/sources/`
-- **Transformed Data**: Output stored in BigQuery `healthcare_transformed` dataset
+- **Data Sources**: `/usr/local/airflow/include/sources/`
+- **Transformed Data**: BigQuery `healthcare_transformed` dataset
 
-## Breakdown of the project structure:
-1. **dags/**: Contains Airflow DAGs for orchestrating tasks in the data pipelines.
-o __pycache__/: Python bytecode cache to improve loading times.
-o .airflowignore: Excludes specified files or directories from being processed as DAGs,
-streamlining performance.
-o health_data_pipeline.py: A specific DAG script designed to process healthcare data,
-with tasks potentially covering data extraction, transformation, and loading (ETL)
-phases, all managed by Airflow.
+## Project Structure Breakdown
 
-2. **include/**: Holds supplementary modules, configuration files, and data resources.
-o dataset/: Contains raw or intermediate datasets used to be transformed and
-uploaded to GCS abd BigQuery.
-o dbt/: Includes dbt models, configurations, and transformations. dbt helps convert
-raw data into a more usable format within a data warehouse, often as SQL scripts
-and YAML configurations.
-o gcp/: Contains configuration files (e.g., service account keys, settings) for integrating
-with Google Cloud Platform services like BigQuery, Cloud Storage, etc.
-o images/: Stores images for use in documentation or in reports/dashboards, which
-can include logos, charts, or any graphical assets.
-o powerbi/: Power BI resources:
-▪ healthcare dashboard.pbix: The main Power BI dashboard file, likely
-containing visualizations and data analysis tailored to healthcare data.
-▪ report file: Another Power BI file, possibly a draft, variant, or supplementary
-report that accompanies the main dashboard.
+1. **dags/**: Contains Airflow DAGs for orchestrating tasks in data pipelines.
+   - **__pycache__/**: Python bytecode cache for improved loading times.
+   - **.airflowignore**: Excludes specific files or directories from DAG processing to optimize performance.
+   - **health_data_pipeline.py**: A DAG script for healthcare data processing, covering ETL phases.
 
-3. **scripts/**: Custom scripts, likely Python or shell scripts, designed for specialized tasks like data
-cleaning, transformations, and automating repetitive processes.
-4. **sources/**: Holds references or connectors to primary data sources. This can include database
-credentials, API connection settings, or CSV/JSON files from external sources that feed into
-the data pipeline.
+2. **include/**: Supplementary modules, config files, and data resources.
+   - **dataset/**: Raw or intermediate datasets for transformation and upload to GCS and BigQuery.
+   - **dbt/**: DBT models, configurations, and SQL/YAML scripts for transforming data within BigQuery.
+   - **gcp/**: Configuration files (e.g., service account keys) for Google Cloud services integration.
+   - **images/**: Stores documentation and dashboard-related images.
+   - **powerbi/**:
+     - `healthcare_dashboard.pbix`: Main Power BI dashboard file.
+     - `report file`: Supplementary Power BI report file, if any.
+
+3. **scripts/**: Custom scripts for tasks like data cleaning, transformations, and automation.
+4. **sources/**: Contains connectors or references to primary data sources (e.g., database credentials, API connection settings, CSV/JSON files). 
 
