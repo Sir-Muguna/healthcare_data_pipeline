@@ -6,10 +6,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Disable SSL warnings for this script
 urllib3.disable_warnings()
-
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Configure logging for better debugging and tracking
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-
+response = requests.get("https://id.who.int", verify=True)
 # Constants for the API
 TOKEN_ENDPOINT = 'https://icdaccessmanagement.who.int/connect/token'
 CHAPTERS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII']
