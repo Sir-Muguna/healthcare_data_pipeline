@@ -67,7 +67,7 @@ Once the data is stored in BigQuery, it connects to Power BI for creating an int
 
 An interactive Power BI dashboard will provide insights into healthcare data trends and metrics.
 
-![MetaData](include/images/HealthCare_Dashboard.png)
+![MetaData](include/images/healthcare_dashboard.png)
 
 ## Prerequisites
 
